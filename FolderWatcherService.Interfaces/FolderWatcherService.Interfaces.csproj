@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{765C588F-EBAF-47A0-8964-CC1C166CD518}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{477FB540-48AA-4EEB-81CB-39C676395E7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FolderWatcherService</RootNamespace>
-    <AssemblyName>FolderWatcherService</AssemblyName>
+    <RootNamespace>FolderWatcherService.Interfaces</RootNamespace>
+    <AssemblyName>FolderWatcherService.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,44 +31,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FolderWatcherService.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="FolderWatcherService.Designer.cs">
-      <DependentUpon>FolderWatcherService.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FileWatcher.cs" />
-    <Compile Include="InstallerFolderWatcherService.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="InstallerFolderWatcherService.Designer.cs">
-      <DependentUpon>InstallerFolderWatcherService.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Logger.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="IWatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FolderWatcherService.Interfaces\FolderWatcherService.Interfaces.csproj">
-      <Project>{477fb540-48aa-4eeb-81cb-39c676395e7f}</Project>
-      <Name>FolderWatcherService.Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
