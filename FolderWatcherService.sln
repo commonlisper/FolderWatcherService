@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcherService", "Fol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcherService.Interfaces", "FolderWatcherService.Interfaces\FolderWatcherService.Interfaces.csproj", "{477FB540-48AA-4EEB-81CB-39C676395E7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatcherService.CUI", "FolderWatcherService.CUI\FolderWatcherService.CUI.csproj", "{44F1A0E0-2789-41D5-A28C-7E403DA396C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{477FB540-48AA-4EEB-81CB-39C676395E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{477FB540-48AA-4EEB-81CB-39C676395E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{477FB540-48AA-4EEB-81CB-39C676395E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F1A0E0-2789-41D5-A28C-7E403DA396C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F1A0E0-2789-41D5-A28C-7E403DA396C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F1A0E0-2789-41D5-A28C-7E403DA396C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F1A0E0-2789-41D5-A28C-7E403DA396C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

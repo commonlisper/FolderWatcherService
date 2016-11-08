@@ -24,7 +24,7 @@ namespace FolderWatcherService
             {
                 using (var sw = new StreamWriter($"{_logPath}", true))
                 {
-                    sw.WriteLine($"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")} - {logMessage}");
+                    sw.WriteLine($"{DateTime.Now:dd/MM/yyyy hh:mm:ss} - {logMessage}");
                     sw.Flush();
                 }
             }

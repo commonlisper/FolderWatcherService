@@ -15,16 +15,14 @@ namespace FolderWatcherService
         private readonly ILogger _logger;
         private readonly FileSystemWatcher _watcher;
         private bool _enabled = true;
-        private readonly string _path;
         private readonly string _pathToMove;
 
         public FileWatcher(string path, string pathToMove, ILogger logger)
         {
             _logger = logger;
-            _path = path;
             _pathToMove = pathToMove;
 
-            _watcher = new FileSystemWatcher(_path);
+            _watcher = new FileSystemWatcher(path);
             _watcher.Created += WatcherOnCreated;
             _watcher.Deleted += WatcherOnDeleted;
             _watcher.Changed += WatcherOnChanged;
